@@ -1,0 +1,75 @@
+@use "../components/" as *;
+
+.testimonial {
+  position: relative;
+  &__hgroup {
+    margin-bottom: 3rem;
+    text-align: center;
+  }
+
+  &__content {
+    position: relative;
+
+    & .content__img {
+      margin-bottom: 3rem;
+      img {
+        display: block;
+        width: 100px;
+        margin: auto;
+        border-radius: 50rem;
+      }
+
+      i {
+        @include icon();
+        position: absolute;
+        left: 50%;
+        top: 80px;
+        transform: translateX(-50%);
+      }
+    }
+
+    & .content__text {
+      max-width: 600px;
+      margin: auto;
+      text-align: center;
+
+      & + h4 {
+        font-size: 1.2rem;
+        font-weight: 500;
+        margin-top: 2rem;
+      }
+    }
+
+    .content__text-2 {
+      text-align: center;
+      font-style: italic;
+    }
+  }
+
+  & .testimonial__arrow {
+    position: absolute;
+    top: 15.6rem;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    gap: 12rem;
+    color: $primaryColor;
+    font-size: 45px;
+    opacity: 0;
+  }
+
+  &:hover .testimonial__arrow {
+    opacity: 1;
+    animation: fadeIn 0.5s;
+  }
+
+  &:hover .testimonial__arrow .bi-arrow-left {
+    transform: translateX(20px);
+    transition: 1s;
+  }
+  &:hover .testimonial__arrow .bi-arrow-right {
+    transform: translateX(-20px);
+    transition: 0.5s;
+  }
+}

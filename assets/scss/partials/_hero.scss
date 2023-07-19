@@ -1,0 +1,59 @@
+@use "../components/" as *;
+
+.hero {
+  background: linear-gradient(
+      to right,
+      rgba(2, 36, 91, 1) 0%,
+      rgba(2, 36, 91, 0) 100%
+    ),
+    url("../../assets/img/carousel-1.jpg");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: scroll;
+  height: 80vh;
+  @include flex(center, flex-start, column);
+
+  @include breakpoints(768px) {
+    text-align: center;
+  }
+
+  @include breakpoints(576px) {
+    height: 60vh;
+  }
+
+  &__heading {
+    .hero__heading-h6 {
+      color: $primaryColor;
+      margin-bottom: 1rem;
+      font-size: 1.25rem;
+      text-transform: uppercase;
+      font-weight: 600;
+
+      @include breakpoints(576px) {
+        font-size: 1rem;
+      }
+    }
+
+    .hero__heading-h3 {
+      color: $lightColor;
+      margin-bottom: 1rem;
+      line-height: 1.2;
+      font-size: 3.5rem;
+      max-width: 900px;
+
+      @include breakpoints(768px) {
+        font-size: 2.5rem;
+      }
+
+      @include breakpoints(576px) {
+        font-size: 1.5rem;
+      }
+    }
+
+    .hero__btn {
+      @include btn();
+      padding: 1rem 2rem;
+    }
+  }
+}

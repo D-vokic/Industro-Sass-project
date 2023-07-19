@@ -1,0 +1,139 @@
+@use "../components/" as *;
+
+.footer {
+  background-color: $darkColor;
+
+  &__wrapper {
+    @include flex(center, center, wrap);
+
+    @include breakpoints(992px) {
+      gap: 2rem;
+    }
+
+    .footer__item {
+      flex-basis: 23%;
+
+      @include breakpoints(992px) {
+        flex-basis: 45%;
+      }
+
+      @include breakpoints(576px) {
+        flex-basis: 80%;
+      }
+
+      .footer__heading {
+        color: $lightColor;
+        font-size: 1.2rem;
+      }
+
+      .footer__list {
+        margin-top: 15px;
+
+        &__item {
+          & :hover {
+            cursor: pointer;
+            letter-spacing: 2px;
+            transition: 1s;
+          }
+          &:not(:last-child) {
+            margin-bottom: 5px;
+          }
+
+          a {
+            color: $darkerLight;
+
+            i {
+              margin-right: 10px;
+              color: $darkerLight;
+            }
+          }
+        }
+      }
+
+      .footer__social {
+        margin-top: 20px;
+
+        a {
+          @include btn(
+            $primaryColor,
+            $lightColor,
+            none,
+            0rem,
+            $lightColor,
+            none
+          );
+          border-radius: 50%;
+
+          &:not(:last-child) {
+            margin-right: 5px;
+          }
+
+          &:hover {
+            color: $darkColor;
+            transition: none;
+          }
+
+          i {
+            width: 35px;
+            height: 35px;
+            line-height: 35px;
+            text-align: center;
+            border-radius: 50%;
+          }
+        }
+      }
+
+      .footer__workingTime {
+        margin-top: 15px;
+
+        p {
+          color: $darkerLight;
+          font-weight: 500;
+        }
+      }
+      .footer__span {
+        display: block;
+        color: $lightColor;
+        font-weight: 500;
+      }
+
+      .extra {
+        margin-top: 15px;
+        color: $darkerLight;
+      }
+
+      .footer__form {
+        margin: 15px 0;
+        position: relative;
+
+        @include breakpoints(576px) {
+          display: block;
+        }
+
+        .footer__input {
+          background: transparent;
+          padding: 1.2rem 1.5rem;
+          color: $lightColor;
+          margin-right: 0.5rem;
+          border: 1px solid $lightColor;
+          width: 100%;
+        }
+
+        .footer__submit {
+          background-color: $primaryColor;
+          color: $lightColor;
+          padding: 0.5rem 1rem;
+          position: absolute;
+          right: 5px;
+          top: 5px;
+          bottom: 5px;
+          font-size: 1.1rem;
+
+          @include breakpoints(576px) {
+            font-size: 1rem;
+          }
+        }
+      }
+    }
+  }
+}

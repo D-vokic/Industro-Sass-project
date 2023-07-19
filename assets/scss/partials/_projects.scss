@@ -1,0 +1,128 @@
+@use "../components/" as *;
+
+.projects {
+  background-color: $darkColor;
+  padding-bottom: 0;
+
+  .section-title {
+    max-width: 500px;
+    margin: auto;
+    color: $lightColor;
+  }
+
+  &__wrapper {
+    margin-top: 3rem;
+    @include flex(flex-start, stretch, row wrap);
+    position: relative;
+
+    @include breakpoints(768px) {
+      width: 90%;
+      margin: 3rem auto;
+    }
+
+    .projects__item {
+      position: relative;
+      flex: 1;
+      overflow: hidden;
+
+      @include breakpoints(992px) {
+        flex-basis: 33%;
+      }
+
+      @include breakpoints(768px) {
+        flex-basis: 80%;
+      }
+
+      @include breakpoints(576px) {
+        flex-basis: 100%;
+      }
+
+      &:hover .projects__text {
+        opacity: 1;
+        bottom: 0;
+      }
+
+      &:hover .projects__img {
+        margin-top: -50px;
+      }
+
+      &:hover ~ #left,
+      &:hover ~ #right {
+        opacity: 1;
+      }
+
+      .projects__img {
+        height: 100%;
+      }
+
+      .projects__text {
+        background-color: $darkColor;
+        padding: 1.5rem;
+        text-align: center;
+        position: absolute;
+        right: 0;
+        left: 0;
+        bottom: -150px;
+        opacity: 0;
+
+        @include breakpoints(768px) {
+          padding: 2.5rem;
+        }
+
+        &::before {
+          position: absolute;
+          top: -15px;
+          right: 0;
+          left: 0;
+          content: "";
+          height: 30px;
+          background-color: $darkColor;
+          transform: skewy(-5deg);
+
+          @include breakpoints(768px) {
+            height: 60px;
+            top: -25px;
+          }
+        }
+
+        .projects__name {
+          color: $primaryColor;
+          font-size: 1.3rem;
+          font-weight: 400;
+          line-height: 1.2;
+        }
+      }
+    }
+
+    .active {
+      .projects__text {
+        opacity: 1;
+        bottom: 0;
+        pointer-events: none;
+      }
+
+      .projects__img {
+        pointer-events: none;
+        margin-top: -50px;
+      }
+    }
+
+    #left {
+      position: absolute;
+      top: 50%;
+      left: 30px;
+      transform: translateY(-50%);
+      @include icon(2.5rem);
+      opacity: 0;
+    }
+
+    #right {
+      position: absolute;
+      top: 50%;
+      right: 30px;
+      transform: translateY(-50%);
+      @include icon(2.5rem);
+      opacity: 0;
+    }
+  }
+}

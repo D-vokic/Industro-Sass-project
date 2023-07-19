@@ -1,0 +1,40 @@
+@use "../components/" as *;
+
+.facts {
+  background-color: $darkColor;
+  color: $lightColor;
+  padding: 3rem 0;
+
+  &__wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+
+    @include breakpoints(1200px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include breakpoints(576px) {
+      grid-template-columns: 1fr;
+    }
+
+    .facts__box {
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      text-align: center;
+      padding: 3rem;
+
+      .number-box {
+        color: $primaryColor;
+        margin-top: 1rem;
+        line-height: 1.2;
+        font-weight: 700;
+        margin-bottom: 0.5rem;
+        font-size: 4rem;
+      }
+
+      span {
+        font-weight: 500;
+      }
+    }
+  }
+}

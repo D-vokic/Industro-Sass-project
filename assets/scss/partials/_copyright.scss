@@ -1,0 +1,24 @@
+@use "../components/" as *;
+
+.copyright {
+  background-color: $darkColor;
+  text-align: center;
+  padding: 2rem 0;
+
+  hr {
+    border: 1px solid rgb(95, 101, 111);
+    margin-bottom: 1rem;
+  }
+  .copyright__text {
+    color: $darkerLight;
+    max-width: 400%;
+    margin: auto;
+  }
+
+  .copyright__link {
+    padding: 0;
+    text-transform: capitalize;
+    font-weight: 500;
+    color: $primaryColor;
+  }
+}

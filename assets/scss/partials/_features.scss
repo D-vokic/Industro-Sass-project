@@ -1,0 +1,83 @@
+@use "../components/" as *;
+
+.features {
+  .features__wrapper {
+    @include flex(center, center, wrap, 3.5rem);
+
+    & > div {
+      flex-basis: 45%;
+
+      @include breakpoints(1200px) {
+        flex-basis: 80%;
+      }
+    }
+
+    .features__modal {
+      position: relative;
+
+      .iconBa {
+        @include icon();
+        font-size: 1.5rem;
+        position: absolute;
+        top: 50%;
+        right: -50px;
+        transform: translateY(-50%);
+        box-sizing: content-box;
+        width: 16px;
+        height: 26px;
+        border: 20px solid white;
+        padding: 18px 20px 20px 28px;
+        animation: pulse-animation 1500ms ease-out infinite;
+
+        @include breakpoints(1200px) {
+          left: 50%;
+          top: 50%;
+          transform: translateX(-50%) translateY(-50%);
+          border: none;
+        }
+
+        @include breakpoints(400px) {
+          display: none;
+        }
+      }
+    }
+
+    .features__content {
+      & > h2 {
+        font-size: 2.4rem;
+        margin-bottom: 0.5rem;
+        text-align: left;
+
+        @include breakpoints(576px) {
+          font-size: 1.5rem;
+        }
+      }
+
+      & p {
+        margin-bottom: 0.5rem;
+        text-align: left;
+      }
+
+      .features__promo {
+        @include flex(space-between, start, row nowrap, 1rem);
+        margin-top: 2rem;
+
+        i {
+          @include icon(2.5rem);
+        }
+
+        .promo__info {
+          & > h4 {
+            font-size: 1.3rem;
+            font-weight: 600;
+            line-height: 1.2;
+
+            @include breakpoints(576px) {
+              font-size: 1rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}

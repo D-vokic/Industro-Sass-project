@@ -1,0 +1,80 @@
+@use "variables" as *;
+
+@mixin flex($justify: center, $align: center, $flow: row wrap, $gap: 0px) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+  flex-flow: $flow;
+  gap: $gap;
+}
+
+@mixin grid($value) {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax($value, 1fr));
+  gap: 2rem;
+}
+
+@mixin icon(
+  $units: 2rem,
+  $borderRadius: 50%,
+  $fontSize: 1.1rem,
+  $bg: $primaryColor,
+  $color: $lightColor,
+  $bgHover: none,
+  $colorHover: none,
+  $fontSize1: 0.8rem,
+  $units1: 1.7rem
+) {
+  height: $units;
+  width: $units;
+  line-height: $units;
+  border-radius: $borderRadius;
+  font-size: $fontSize;
+  text-align: center;
+  cursor: pointer;
+  background: $bg;
+  color: $color;
+
+  @include breakpoints(576px){
+    font-size: $fontSize1;
+    height: $units1;
+  width: $units1;
+  line-height: $units1;
+  }
+}
+
+
+@mixin btn(
+  $bg: $primaryColor,
+  $color: $lightColor,
+  $borderColor: $primaryColor,
+  $paddingTop: 0.5rem,
+  $bgColor: $secondaryColor,
+  $brColor: $secondaryColor
+) {
+  background-color: $bg;
+  color: $color;
+  border-color: $borderColor;
+  padding: $paddingTop;
+  font-weight: 500;
+  text-transform: capitalize;
+  display: inline-block;
+  cursor: pointer;
+  border: none;
+  
+  &:hover {
+    color: $bgColor;
+    border-color: $brColor;
+  }
+
+  @include breakpoints(576ps){
+    font-size: 0.9rem;
+    padding: 0.8rem .9rem;
+  }
+}
+
+@mixin breakpoints($bp) {
+  @media(max-width:$bp) {
+      @content;
+  }
+}

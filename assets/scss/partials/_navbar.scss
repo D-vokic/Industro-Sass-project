@@ -1,0 +1,122 @@
+@use "../components/" as *;
+
+.nav {
+  position: sticky;
+  top: 0rem;
+  width: 100%;
+  z-index: 999;
+  background-color: $lightColor;
+
+  &__wrapper {
+    @include flex(space-between, center, row wrap);
+
+    .nav__brand {
+      position: relative;
+      padding: 1rem 2rem;
+      font-size: 1.4rem;
+      background: $primaryColor;
+      color: $lightColor;
+      z-index: 100;
+
+      @media (width < 576px) {
+        padding: 1rem;
+        font-size: 1rem;
+      }
+    }
+
+    .nav__brand::after {
+      position: absolute;
+      content: "";
+      width: 50px;
+      height: 100%;
+      top: 0;
+      right: -25px;
+      transform: skewX(-30deg);
+      background-color: $primaryColor;
+      z-index: -1;
+    }
+
+    .nav__hamburger {
+      color: $secondaryColor;
+      background-color: transparent;
+      border: 1px solid #eeeeee;
+      font-size: 2rem;
+      display: none;
+      cursor: pointer;
+      width: 1.5rem;
+      height: 1.5rem;
+
+      @media (width < 992px) {
+        display: block;
+        margin-right: 2rem;
+      }
+
+      @media (width < 576px) {
+        font-size: 1.5rem;
+      }
+    }
+
+    .nav__list {
+      @include flex(center, center, row nowrap, 2rem);
+      color: $darkColor;
+      margin-right: 3rem;
+
+      @media (width < 992px) {
+        display: none;
+      }
+
+      .nav__item {
+        .nav__link {
+          margin-right: 1rem;
+          color: $darkColor;
+          font-size: 18px;
+          font-weight: 500;
+
+          &:hover,
+          &.active {
+            color: $primaryColor;
+          }
+        }
+      }
+
+      .dropdownPages {
+        position: relative;
+
+        i {
+          vertical-align: middle;
+          margin-left: 0.5rem;
+        }
+
+        &:hover .dropdown {
+          opacity: 1;
+        }
+
+        .dropdown {
+          background-color: $lightColor;
+          border-radius: 10px;
+          opacity: 0;
+          display: block;
+          position: absolute;
+          top: 150%;
+          padding: 0.5rem 0;
+          width: 12.5rem;
+
+          .dropdown__link {
+            color: $darkColor;
+            font-size: 0.9rem;
+            display: block;
+            padding: 0.2rem 1.5rem;
+
+            &:hover {
+              background-color: #d3d3d3;
+            }
+          }
+        }
+      }
+
+      .nav__btn {
+        @include btn();
+      }
+    }
+  }
+}

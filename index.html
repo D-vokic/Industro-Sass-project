@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Industro</title>
+
+  <!-- Meta tags -->
+  <meta name="author" content="Dusko Vokic" />
+  <meta name="keywords" content="Sass, Flexbox, Grid, Position layout Template, HTML template, CSS, CSS template" />
+  <meta name="description" content="Industrial template for beginers" />
+  <meta name="generator" content="Visual Studio Code" />
+  <meta name="title" content="Industro project in Sass" />
+
+  <!-- Favicon -->
+  <link href="assets/img/favicon.png" rel="icon" />
+
+  <!-- Open Sans Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet" />
+
+  <!-- Rubik Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet" />
+
+  <!-- Font awesome CDN CSS link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Bootstrap CDN CSS link -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+
+  <!-- AOS CSS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body>
+
+
+
+
+
+  <!-- Top navbar section starts -->
+  <div class="top__nav">
+    <div class="top__nav__social">
+      <span>Follow Us:</span>
+      <a class="top__nav__link" href=""><i class="fab fa-facebook-f"></i></a>
+      <a class="top__nav__link" href=""><i class="fab fa-twitter"></i></a>
+      <a class="top__nav__link" href=""><i class="fab fa-linkedin-in"></i></a>
+      <a class="top__nav__link" href=""><i class="fab fa-instagram"></i></a>
+    </div>
+    <div class="top__nav__contact">
+      <p class="top__nav__p">
+        <i class="fa fa-phone"></i>Call Us: +012 345 6789
+      </p>
+    </div>
+  </div>
+  <!-- Top navbar section ends -->
+
+
+
+
+
+  <!-- Navbar section starts -->
+  <nav class="nav">
+    <div class="nav__wrapper">
+      <a href="index.html" class="nav__brand">
+        <h1 class="nav__logo">Industro</h1>
+      </a>
+      <span class="fa fa-bars nav__hamburger"></span>
+      <ul class="nav__list">
+        <li class="nav__item">
+          <a href="index.html" class="nav__link active">Home</a>
+        </li>
+        <li class="nav__item">
+          <a href="#about" class="nav__link">About</a>
+        </li>
+        <li class="nav__item">
+          <a href="#services" class="nav__link">Services</a>
+        </li>
+        <li class="nav__item dropdownPages">
+          <a href="#" class="nav__link">Pages<i class="fa-solid fa-angle-down"></i></a>
+          <ul class="dropdown">
+            <li class="dropdown__item">
+              <a href="#features" class="dropdown__link">Features</a>
+            </li>
+            <li class="dropdown__item">
+              <a href="#team" class="dropdown__link">Our Team</a>
+            </li>
+            <li class="dropdown__item">
+              <a href="#faq" class="dropdown__link">FAQs</a>
+            </li>
+            <li class="dropdown__item">
+              <a href="#testimonial" class="dropdown__link">Testimonial</a>
+            </li>
+            <li class="dropdown__item">
+              <a href="#" class="dropdown__link">404 Page</a>
+            </li>
+          </ul>
+        </li>
+        <li class="nav__item">
+          <a href="#contact" class="nav__link">Contact</a>
+        </li>
+        <a href="" class="nav__btn">Get A Quote</a>
+      </ul>
+    </div>
+  </nav>
+  <!-- Navbar section ends -->
+
+
+
+
+
+  <!-- Hero section starts-->
+  <section class="hero">
+    <hgroup class="hero__heading container">
+      <h6 class="hero__heading-h6">25 YEARS OF WORKING EXPERIENCE</h6>
+      <h3 class="hero__heading-h3">The Best Reliable Industry Solution</h3>
+      <a href="#" class="hero__btn">Explore More</a>
+    </hgroup>
+  </section>
+  <!-- Hero section ends -->
+
+
+
+
+
+  <!-- About section starts -->
+  <section class="about" id="about">
+    <div class="about__wrapper container">
+      <div class="about__img">
+        <div data-aos="fade-up" data-aos-delay="150">
+          <img src="assets/img/about-1.jpg" alt="about img" />
+        </div>
+        <div class="about__img-2" data-aos="fade-down" data-aos-delay="150">
+          <img src="assets/img/about-2.jpg" alt="about img" />
+        </div>
+      </div>
+      <div class="about__content" data-aos="fade-up" data-aos-delay="150">
+        <div class="about__hgroup">
+          <h4 class="section-title-before">ABOUT US</h4>
+          <h5 class="section-title">We Are Leader In Industrial Market</h5>
+          <p>
+            Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu
+            diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet
+            lorem sit clita duo justo magna dolore erat amet
+          </p>
+        </div>
+        <div class="about__favor">
+          <div class="favor__history">
+            <p class="favor__box">25</p>
+            <p class="favor__text">Years of Experience</p>
+          </div>
+          <div class="about__benefits">
+            <p class="benefits__p">
+              <i class="fa fa-check"></i>Power & Energy
+            </p>
+            <p class="benefits__p">
+              <i class="fa fa-check"></i>Civil Engineering
+            </p>
+            <p class="benefits__p">
+              <i class="fa fa-check"></i>Chemical Engineering
+            </p>
+            <p class="benefits__p">
+              <i class="fa fa-check"></i>Mechanical Engineering
+            </p>
+            <p class="benefits__p">
+              <i class="fa fa-check"></i>Oil & Gas Engineering
+            </p>
+          </div>
+        </div>
+        <div class="about__info">
+          <div class="about__data">
+            <i class="fa fa-envelope"></i>
+            <div>
+              <p>Email us</p>
+              <p class="data__address">info@example.com</p>
+            </div>
+          </div>
+          <div class="about__data">
+            <i class="fa fa-phone"></i>
+            <div>
+              <p>Email us</p>
+              <p class="data__address">info@example.com</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- About section ends -->
+
+
+
+
+
+  <!-- Facts section starts -->
+  <section class="facts" id="facts">
+    <div class="facts__wrapper container">
+      <div class="facts__box" data-aos="zoom-in" data-aos-delay="100">
+        <i class="fa fa-certificate fa-3x"></i>
+        <p class="number-box">25</p>
+        <span>Years Experience</span>
+      </div>
+      <div class="facts__box" data-aos="zoom-in" data-aos-delay="300">
+        <i class="fa fa-users-cog fa-3x"></i>
+        <p class="number-box">135</p>
+        <span>Team Members</span>
+      </div>
+      <div class="facts__box" data-aos="zoom-in" data-aos-delay="500">
+        <i class="fa fa-users fa-3x"></i>
+        <p class="number-box">957</p>
+        <span>Happy Clients</span>
+      </div>
+      <div class="facts__box" data-aos="zoom-in" data-aos-delay="700">
+        <i class="fa fa-check-double fa-3x"></i>
+        <p class="number-box">1839</p>
+        <span>Projects Done</span>
+      </div>
+    </div>
+  </section>
+  <!-- Facts section ends -->
+
+
+
+
+
+  <!-- Features section starts -->
+  <section class="features" id="features">
+    <div class="features__wrapper container">
+      <div class="features__modal" data-aos="zoom-in" data-aos-delay="100">
+        <img src="assets/img/feature.jpg" class="modal__image" alt="features img" />
+        <div class="iconBa">
+          <i class="fa fa-play"></i>
+        </div>
+      </div>
+      <div class="features__content" data-aos="zoom-in" data-aos-delay="200">
+        <p class="section-title-before">Why Choosing Us!</p>
+        <h2 class="section-title">Few Reasons Why People Choosing Us!</h2>
+        <p>
+          Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu
+          diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet
+          lorem sit clita duo justo magna dolore erat amet
+        </p>
+        <div class="features__promo">
+          <div class="promo__icon">
+            <i class="fa fa-check"></i>
+          </div>
+          <div class="promo__info">
+            <h4 class="section-title">Experienced Workers</h4>
+            <p>
+              Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo
+              justo magna dolore erat amet
+            </p>
+          </div>
+        </div>
+        <div class="features__promo">
+          <div class="promo__icon">
+            <i class="fa fa-check"></i>
+          </div>
+          <div class="promo__info">
+            <h4 class="section-title">Experienced Workers</h4>
+            <p>
+              Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo
+              justo magna dolore erat amet
+            </p>
+          </div>
+        </div>
+        <div class="features__promo">
+          <div class="promo__icon">
+            <i class="fa fa-check"></i>
+          </div>
+          <div class="promo__info">
+            <h4 class="section-title">Experienced Workers</h4>
+            <p>
+              Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo
+              justo magna dolore erat amet
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Features section ends -->
+
+
+
+
+
+  <!-- Services section starts -->
+  <section class="services" id="services">
+    <div class="services__wrapper container">
+      <div class="services__hgroup" data-aos="fade-up" data-aos-delay="100">
+        <p class="section-title-before">Our Services</p>
+        <h2 class="section-title">We Provide Best Industrial Services</h2>
+      </div>
+      <div class="services__content">
+        <div class="services__item" data-aos="fade-up" data-aos-delay="200">
+          <img class="" src="assets/img/service-1.jpg" alt="services img" />
+          <div class="services__img">
+            <img class="" src="assets/img/service-1.jpg" alt="services img" />
+          </div>
+          <div class="services__detail">
+            <div class="services__title">
+              <hr />
+              <h3 class="section-title">Civil &amp; Gas Engineering</h3>
+              <hr />
+            </div>
+            <div class="services__text">
+              <p class="services__p">
+                Erat ipsum justo amet duo et elitr dolor, est duo duo eos
+                lorem sed diam stet diam sed stet.
+              </p>
+            </div>
+          </div>
+          <a class="services__btn" href="">Read More</a>
+        </div>
+        <div class="services__item" data-aos="fade-up" data-aos-delay="300">
+          <img class="" src="assets/img/service-2.jpg" alt="services img" />
+          <div class="services__img">
+            <img class="" src="assets/img/service-2.jpg" alt="services img" />
+          </div>
+          <div class="services__detail">
+            <div class="services__title">
+              <hr />
+              <h3 class="section-title">Power & Energy Engineering</h3>
+              <hr />
+            </div>
+            <div class="services__text">
+              <p class="services__p">
+                Erat ipsum justo amet duo et elitr dolor, est duo duo eos
+                lorem sed diam stet diam sed stet.
+              </p>
+            </div>
+          </div>
+          <a class="services__btn" href="">Read More</a>
+        </div>
+        <div class="services__item" data-aos="fade-up" data-aos-delay="400">
+          <img class="" src="assets/img/service-3.jpg" alt="services img" />
+          <div class="services__img">
+            <img class="" src="assets/img/service-3.jpg" alt="services img" />
+          </div>
+          <div class="services__detail">
+            <div class="services__title">
+              <hr />
+              <h3 class="section-title">Plumbing & Water Treatment</h3>
+              <hr />
+            </div>
+            <div class="services__text">
+              <p class="services__p">
+                Erat ipsum justo amet duo et elitr dolor, est duo duo eos
+                lorem sed diam stet diam sed stet.
+              </p>
+            </div>
+          </div>
+          <a class="services__btn" href="">Read More</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Services section ends -->
+
+
+
+
+
+
+  <!-- Projects section starts -->
+  <section class="projects" id="projects">
+    <h3 class="section-title-before" data-aos="fade-up data-aos-delay="100">Our Projects</h3>
+    <h4 class="section-title" data-aos="fade-down data-aos-delay="200">See What We Have Completed Recently</h4>
+    <div class="projects__wrapper">
+      <article class="projects__item" data-aos="zoom-in" data-aos-delay="100">
+        <img src="assets/img/project-1.jpg" alt="projects image" class="projects__img">
+        <div class="projects__text">
+          <h5 class="projects__name">Civil Engineering</h5>
+        </div>
+      </article>
+      <article class="projects__item" data-aos="zoom-in" data-aos-delay="200">
+        <img src="assets/img/project-2.jpg" alt="projects image" class="projects__img">
+        <div class="projects__text">
+          <h5 class="projects__name">Auto Engineering</h5>
+        </div>
+      </article>
+      <article class="projects__item active" data-aos="zoom-in" data-aos-delay="300">
+        <img src="assets/img/project-3.jpg" alt="projects image" class="projects__img">
+        <div class="projects__text">
+          <h5 class="projects__name">Water Engineering</h5>
+        </div>
+      </article>
+      <article class="projects__item" data-aos="zoom-in" data-aos-delay="400">
+        <img src="assets/img/project-4.jpg" alt="projects image" class="projects__img">
+        <div class="projects__text">
+          <h5 class="projects__name">Ground Engineering</h5>
+        </div>
+      </article>
+      <article class="projects__item" data-aos="zoom-in" data-aos-delay="500">
+        <img src="assets/img/project-5.jpg" alt="projects image" class="projects__img">
+        <div class="projects__text">
+          <h5 class="projects__name">Gas Engineering</h5>
+        </div>
+      </article>
+      <i class="bi bi-chevron-left" id="left"></i>
+      <i class="bi bi-chevron-right" id="right"></i>
+    </div>
+  </section>
+  <!-- Projects section ends -->
+
+
+
+
+
+  <!-- Team section starts -->
+  <section class="team" id="team">
+    <p class="section-title-before" data-aos="fade-down" data-aos-delay="200">OUR TEAM</p>
+    <h2 class="section-title" data-aos="fade-up" data-aos-delay="200">Dedicated Team Members</h2>
+    <div class="team__wrapper container">
+      <article class="team__item" data-aos="fade-up" data-aos-delay="200">
+        <img src="assets/img/team-1.jpg" alt="team image" class="team__img">
+        <div class="team__content">
+          <div class="team__icon">
+            <i class="fa fa-2x fa-share"></i>
+          </div>
+          <div class="team__position">
+            <h5 class="team__name">Rob Miller</h5>
+            <p class="team__profession">CEO &amp; Founder</p>
+            <div class="team__social">
+              <a href="#" class="fa-brands fa-facebook-f"></a>
+              <a href="#" class="fa-brands fa-twitter"></a>
+              <a href="#" class="fa-brands fa-instagram"></a>
+            </div>
+          </div>
+        </div>
+      </article>
+      <article class="team__item" data-aos="fade-down" data-aos-delay="300">
+        <img src="assets/img/team-2.jpg" alt="team image" class="team__img">
+        <div class="team__content">
+          <div class="team__icon">
+            <i class="fa fa-2x fa-share"></i>
+          </div>
+          <div class="team__position">
+            <h5 class="team__name">Adam Crew</h5>
+            <p class="team__profession">Project Manager</p>
+            <div class="team__social">
+              <a href="#" class="fa-brands fa-facebook-f"></a>
+              <a href="#" class="fa-brands fa-twitter"></a>
+              <a href="#" class="fa-brands fa-instagram"></a>
+            </div>
+          </div>
+        </div>
+      </article>
+      <article class="team__item" data-aos="fade-up" data-aos-delay="200">
+        <img src="assets/img/team-3.jpg" alt="team image" class="team__img">
+        <div class="team__content">
+          <div class="team__icon">
+            <i class="fa fa-2x fa-share"></i>
+          </div>
+          <div class="team__position">
+            <h5 class="team__name">Peter Farel</h5>
+            <p class="team__profession">Engeneer</p>
+            <div class="team__social">
+              <a href="#" class="fa-brands fa-facebook-f"></a>
+              <a href="#" class="fa-brands fa-twitter"></a>
+              <a href="#" class="fa-brands fa-instagram"></a>
+            </div>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+  <!-- Team section ends -->
+
+
+
+
+
+  <!-- Testimonial section starts -->
+  <section class="testimonial container" id="testimonial">
+    <div class="testimonial__hgroup" data-aos="zoom-in" data-aos-delay="150">
+      <p class="section-title-before">TESTIMONIAL</p>
+      <h2 class="section-title">What Our Clients Say!</h2>
+    </div>
+    <div class="testimonial__content" data-aos="zoom-in" data-aos-delay="250">
+      <div class="content__img">
+        <img src="assets/img/testimonial-1.jpg" alt="testimonial image">
+        <i class="fa fa-quote-left"></i>
+      </div>
+      <p class="content__text">
+        Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna ut diam sit et amet
+        stet eos sed clita erat magna elitr erat sit sit erat at rebum justo sea clita.
+      </p>
+      <h4 class="section-title">Client Name</h4>
+      <p class="content__text-2">Profession</p>
+    </div>
+    <div class="testimonial__arrow">
+      <i class="bi bi-arrow-left"></i>
+      <i class="bi bi-arrow-right"></i>
+    </div>
+  </section>
+  <!-- Testimonial section ends -->
+
+
+
+
+
+  <!-- Footer section starts -->
+  <section class="footer section">
+    <div class="footer__wrapper container">
+      <article class="footer__item">
+        <h3 class="footer__heading">Office Contact</h3>
+        <ul class="footer__list">
+          <li class="footer__list__item"><a href="#"><i class="fas fa-map-marker-alt"></i>Beograd, Srbija</a>
+          </li>
+          <li class="footer__list__item"><a href="#"><i class="fas fa-phone-alt"></i>+098 765 4321</a></li>
+          <li class="footer__list__item"><a href="#"><i class="fas fa-envelope"></i>info@example.com</a></li>
+        </ul>
+        <div class="footer__social">
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </article>
+      <article class="footer__item">
+        <h3 class="footer__heading">Quick Links</h3>
+        <ul class="footer__list">
+          <li class="footer__list__item"><a href="#about"><i class="fa fa-angle-right"></i>About Us</a></li>
+          <li class="footer__list__item"><a href="#contact"><i class="fa fa-angle-right"></i>Contact Us</a>
+          </li>
+          <li class="footer__list__item"><a href="#services"><i class="fa fa-angle-right"></i>Our Services</a>
+          </li>
+          <li class="footer__list__item"><a href="#"><i class="fa fa-angle-right"></i>Terms & Condition</a>
+          </li>
+          <li class="footer__list__item"><a href="#"><i class="fa fa-angle-right"></i>Support</a></li>
+        </ul>
+      </article>
+      <article class="footer__item">
+        <h3 class="footer__heading">Business Hours</h3>
+        <div class="footer__workingTime">
+          <p>Monday - Friday <span class="footer__span">09:00 am - 07:00 pm</span></p>
+          <p>Saturday <span class="footer__span">09:00 am - 12:00 pm</span></p>
+          <p>Sunday <span class="footer__span">Closed</span></p>
+        </div>
+      </article>
+      <article class="footer__item">
+        <h3 class="footer__heading">Newsletter</h3>
+        <p class="footer__span extra">Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
+        <form class="footer__form">
+          <input type="email" placeholder="Your Email" class="footer__input">
+          <input type="submit" value="SignUp" class="footer__submit">
+        </form>
+      </article>
+    </div>
+  </section>
+  <!-- Footer section ends -->
+
+
+
+
+
+  <!-- Copyright section starts -->
+  <section class="copyright">
+    <hr>
+    <p class="copyright__text">Copyright © <a class="copyright__link" href="#">Your Site Name</a>,
+      All Right
+      Reserved.</p>
+    <p class="copyright__text">Designed <a class="copyright__link" href="">ByMe</a></p>
+  </section>
+  <!-- Copyright section ends -->
+
+
+
+
+
+  <!-- Back to top button starts -->
+  <button onclick="topFunction()" id="scrollBtn" title="You wanna go to top? Click than."
+    class="bi bi-arrow-up"></button>
+  <!-- Back to top button ends -->
+
+  <!-- Custom JS -->
+  <script src="assets/js/main.js"></script>
+
+  <!-- AOS JS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <script>
+    AOS.init({ duration: 1200, });
+  </script>
+
+</body>
+
+</html>

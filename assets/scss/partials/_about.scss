@@ -1,0 +1,140 @@
+@use "../components/" as *;
+
+.about {
+  &__wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+
+    @include breakpoints(1200px) {
+      grid-template-columns: 1fr;
+    }
+
+    .about__img {
+      @include flex(start, start, row nowrap, 1rem);
+
+      @include breakpoints(768px) {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .about__img-2 {
+        align-self: end;
+
+        @include breakpoints(768px) {
+          align-self: center;
+        }
+      }
+    }
+
+    .about__img div {
+      flex: 1;
+    }
+  }
+}
+
+.about__content {
+  .about__hgroup {
+    margin-bottom: 1.5rem;
+    
+    .section-title {
+      max-width: 600px;
+      text-align: left;
+    }
+
+    .section-title-before{
+      text-align: left;
+    }
+  }
+
+  .about__favor {
+    @include flex(start, start, row nowrap, 3rem);
+
+    @include breakpoints(768px) {
+      justify-content: start;
+    }
+
+    @include breakpoints(576px) {
+      display: block;
+    }
+
+    .favor__history {
+      background-color: $primaryColor;
+      padding: 1.5rem;
+
+      .favor__box{
+        color: $darkColor;
+        font-size: 4rem;
+        font-weight: bold;
+
+        @include breakpoints(576px) {
+          font-size: 2rem;
+        }
+      }
+
+      .favor__text {
+        font-weight: 500;
+        color: $lightColor;
+        font-size: 1.3rem;
+        max-width: 100px;
+
+        @include breakpoints(576px) {
+          max-width: 100%;
+        }
+      }
+    }
+  }
+
+  .about__benefits {
+    margin-bottom: 1.5rem;
+
+    @include breakpoints(576px) {
+      margin-top: 1rem;
+    }
+
+    .benefits__p {
+      padding-bottom: 1rem;
+      font-weight: 400;
+      color: #5f656f;
+    }
+
+    i {
+      margin-right: 1rem;
+      color: $primaryColor;
+    }
+  }
+
+  .about__info {
+    @include flex(start, center, wrap, 1rem);
+
+    @include breakpoints(992px) {
+      display: block;
+    }
+
+    .about__data {
+      @include flex(space-between, center, row nowrap, 1rem);
+
+      @include breakpoints(992px) {
+       justify-content: start;
+      }
+
+      i {
+        @include icon(2.5rem);
+
+        @include breakpoints(576px) {
+          font-size: 1rem;
+        }
+      }
+
+      .data__address {
+        font-size: 1.2rem;
+        color: $darkColor;
+        font-weight: bold;
+
+        @include breakpoints(576px){
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+}
