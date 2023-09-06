@@ -1,6 +1,6 @@
 # 12-Industro-Sass-project
 
-https://duskorsl.github.io/12-Industro-Sass-project/
+https://D-vokic.github.io/12-Industro-Sass-project/
 
 Hi, I am Duško.
 
