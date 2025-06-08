@@ -1,6 +1,6 @@
 # 12-Industro-Sass-project
 
-https://D-vokic.github.io/12-Industro-Sass-project/
+Experience the project firsthand — demo hosted on GitHub ready for [view](https://d-vokic.github.io/Industro-Sass-project/)
 
 Hi, I am Duško.
 
